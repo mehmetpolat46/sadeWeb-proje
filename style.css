@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+* {
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    background-color: black;
+}
+
+.header {
+    position: fixed;
+    padding: 30px;
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    font-size: 40px;
+}
+
+.header-left span {
+    color: red;
+}
+
+.header .header-left p {
+    color: white;
+}
+
+.header .header-left p,
+span {
+    font-family: 'Rubik Puddles', cursive;
+}
+
+.header-right {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header-right ul {
+    display: flex;
+    gap: 50px;
+}
+
+.header-right ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.header-right ul a:hover {
+    color: red;
+    transform: scale(1.1);
+    transition: all .5s ease;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.col-left {
+    margin-left: 50px;
+    margin-top: 0px;
+    color: white;
+    flex-direction: row;
+}
+
+.col-left h1 {
+    font-size: 60px;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.col-left p {
+    font-size: 22px;
+    margin-bottom: 50px;
+    opacity: .3;
+}
+
+button {
+    max-width: 300px;
+    padding: 20px 40px;
+    background-color: black;
+    color: red;
+    border: 3px solid white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.col-right img {
+    width: 600px;
+    height: 600px;
+    margin-top: 30px;
+}
+
+button {
+    
+    border-radius: 30px;
+    border: 2px solid red;
+   
+}
+button:hover{
+    background-color: #1d1c1c;
+    color: #d30a0a;
+}
+
+
+
+.col-left button:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+@property --border-angle {
+    syntax: "<angle>";
+    inherits: true;
+    initial-value: 0turn;
+}
+
+.about {
+    height: 100vh;
+    background-color: black;
+}
+
+.about-container {
+    display: flex;
+    background-color: black;
+    color: white;
+}
+
+.about-title h1 {
+    display: flex;
+    font-size: 40px;
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.about p {
+    font-size: 22px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 200px;
+    margin-right: 50px;
+    opacity: .3;
+}
+
+.about .about-left h3 {
+    font-size: 22px;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    opacity: .3;
+}
+
+.about .about-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.about .about-container .about-right img {
+
+    width: 600px;
+    height: 400px;
+    border-radius: 40px;
+    margin-right: 100px;
+    margin-top: 150px;
+}
+
+.blog {
+    height: 100vh;
+    background-color: black;
+}
+
+.blog-title {
+    color: white;
+    display: flex;
+    font-size: 40px;
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.blog-button {
+    display: flex;
+    color: red;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-button button {
+    border: 1px solid red;
+    display: flex;
+}
+
+.blog-left {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.blog-left p {
+    opacity: .3;
+}
+
+.blog-right img {
+    height: 400px;
+    width: 600px;
+}
+
+.team {
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.team-title {
+    display: flex;
+    font-size: 40px;
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.team-container {
+    justify-content: space-around;
+    display: flex;
+}
+
+.team-left {
+    flex-basis: 50%;
+}
+
+.team-left img {
+    margin-left: 100px;
+    height: 400px;
+    width: 600px;
+  
+    border-radius: 30px;
+}
+
+.team-right {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.team-right p:nth-child(2) {
+    opacity: .3;
+}
+
+.sponsor {
+    background-color: black;
+    color: white;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.sponsor h1 {
+    margin-bottom: 50px;
+}
+
+.sponsor img {
+    border: 2px solid wheat;
+    padding: 10px;
+    margin: 10px;
+}
+
+.sponsor img:hover {
+    border: 2px solid red;
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.sponsor img:nth-child(2n) {
+    background-color: #141b22;
+}
+
+.footer {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: #101010;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer-left {
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-left h1 {
+    font-family: "Indie Flower";
+    color: red;
+    margin: 0;
+}
+
+.footer-left p {
+    margin: 0;
+    font-size: 18px;
+    color: rgba(30, 30, 30, 0.5);
+}
+
+.footer-left-social {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.footer-left-social i {
+    color: white;
+}
+
+.footer-left-social a {
+    color: #566060;
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.footer-left-social a:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.footer-left-rights {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 80px;
+}
+
+.footer-right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.footer-right ul li {
+    list-style-type: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer-right ul li:nth-child(1) {
+    font-weight: 800;
+    color: red;
+}
+
+.footer-right ul li:hover {
+    transform: scale(1.1);
+    color: gray;
+}
